@@ -1,0 +1,23 @@
+{
+  "name": "viz",
+  "version": "1.0.0",
+  "description": "Advanced Discord bot. Made by Viz#0021",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "canvas": "^2.7.0",
+    "discord-giveaways": "^4.4.3",
+    "discord.js": "^12.5.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "quick.db": "^7.1.3",
+    "request": "^2.88.2",
+    "snekfetch": "^4.0.4"
+  },
+  "license": "MIT"
+}
