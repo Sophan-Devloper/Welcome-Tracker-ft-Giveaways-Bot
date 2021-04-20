@@ -7,7 +7,7 @@ module.exports = {
     run: async(client, message) => {
         const embed = new Discord.MessageEmbed()
         .setThumbnail(client.user.displayAvatarURL())
-        .setTitle("Bot's ping")
+        .setTitle("Help Commands")
         .addField("Admin", `cleardata\nleavechannel\nleavemessage\nwelchannel\nwelmessage`, true)
         .addField("Info", `help\ninvites\nping`, true)
         .addField("utility", `snipe`)
