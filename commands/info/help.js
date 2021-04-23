@@ -9,8 +9,9 @@ module.exports = {
         .setThumbnail(client.user.displayAvatarURL())
         .setTitle("Help Commands")
         .addField("Admin", `cleardata\nleavechannel\nleavemessage\nwelchannel\nwelmessage`, true)
-        .addField("Info", `help\ninvites\nping`, true)
-        .addField("utility", `snipe`)
+        .addField("Info", `emoji\ninvites\nping\ninvite\nuptime`, true)
+        .addField("Giveaway", `start\nreroll\nend`, true)
+        .addField("utility", `snipe`, true)
         .setColor('BLACK')
         .setTimestamp();
         message.channel.send(embed)

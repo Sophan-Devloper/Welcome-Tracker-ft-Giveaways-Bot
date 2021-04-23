@@ -32,7 +32,7 @@ module.exports = {
         }))
 
         let replyText = new MessageEmbed()
-            .setThumbnail(message.guild.avatarURL())
+            // .setThumbnail(message.guild.user.avatarURL())
             .setTitle(`📩 Invitation Cards ${message.guild.name}`)
             .setDescription(` \n`)
             .setColor("BLUE")
