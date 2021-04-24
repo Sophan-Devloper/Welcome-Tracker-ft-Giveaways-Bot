@@ -8,10 +8,10 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         .setThumbnail(client.user.displayAvatarURL())
         .setTitle("Help Commands")
-        .addField("Admin", `cleardata\nleavechannel\nleavemessage\nwelchannel\nwelmessage`, true)
-        .addField("Info", `emoji\ninvites\nping\ninvite\nuptime`, true)
+        .addField("Admin", `cleardata\nleavechannel\nleavemessage\nwelchannel\nwelmessage\nclear`, true)
+        .addField("Info", `emoji\ninvitelist\nping\ninvite\nuptime`, true)
         .addField("Giveaway", `start\nreroll\nend`, true)
-        .addField("utility", `snipe`, true)
+        .addField("utility", `avatar\nsnipe`, true)
         .setColor('BLACK')
         .setTimestamp();
         message.channel.send(embed)

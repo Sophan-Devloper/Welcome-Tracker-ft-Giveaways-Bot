@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js');
 module.exports = {
-    name: "invites",
+    name: "invitelist",
     aliases: [],
-    description: "Info How many inviter",
+    description: "Top 10 inviter in ther server",
     run: async(client, message) => {
        
     if (!message.guild.me.hasPermission("MANAGE_GUILD")) {
@@ -32,14 +32,13 @@ module.exports = {
         }))
 
         let replyText = new MessageEmbed()
-            // .setThumbnail(message.guild.user.avatarURL())
             .setTitle(`📩 Invitation Cards ${message.guild.name}`)
             .setDescription(` \n`)
             .setColor("BLUE")
         const sortedInvites = Object.keys(inviteCounter).sort((a, b) => inviteCounter[b] - inviteCounter[a])
 
-        if (sortedInvites.length > 5) sortedInvites.length = 5
-        else if (sortedInvites.length > 5) sortedInvites.length = sortedInvites.length
+        if (sortedInvites.length > 10) sortedInvites.length = 10
+        else if (sortedInvites.length > 10) sortedInvites.length = sortedInvites.length
 
 
         for (const invite of sortedInvites) {
